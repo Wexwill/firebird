@@ -1,0 +1,20 @@
+uuid: c081a423-2dc3-47b7-8c1d-c010b040270f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - firebird
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: firebird_page_title
+theme: firebird
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

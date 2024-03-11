@@ -1,0 +1,22 @@
+uuid: c0a696e4-d732-42bf-9807-c6b4294a7246
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - firebird
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: firebird_help
+theme: firebird
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the custom theme.
+ */
+
+/**
+ * Implements hook_preprocess_page
+ */
+function firebird_preprocess_page(&$variables): void {
+  $variables['#cache']['max-age'] = 0;
+  echo 'test';
+//  phpinfo();
+}

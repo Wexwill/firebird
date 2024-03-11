@@ -1,0 +1,22 @@
+uuid: b2af0bf2-c020-4de6-ae95-3aa38e00c3a3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - firebird
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: firebird_primary_local_tasks
+theme: firebird
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

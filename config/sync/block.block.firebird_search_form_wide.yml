@@ -1,0 +1,23 @@
+uuid: b16bc88b-e16a-4933-abe4-5256545f9fd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - firebird
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: firebird_search_form_wide
+theme: firebird
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
