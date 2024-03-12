@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Installation hooks for the firebird module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function firebird_module_schema() {
+  $schema['currency_exchange'] = [
+    'description' => 'Stores data with currency exchange.',
+    'fields' => [
+      'id' => [
+        'description' => 'id',
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'dollar' => [
+        'description' => 'US Dollar.',
+        'type' => 'varchar',
+        'length' => 64,
+      ],
+      'euro' => [
+        'description' => 'Euro.',
+        'type' => 'varchar',
+        'length' => 64,
+      ],
+      'ruble' => [
+        'description' => 'Russian ruble.',
+        'type' => 'varchar',
+        'length' => 64,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

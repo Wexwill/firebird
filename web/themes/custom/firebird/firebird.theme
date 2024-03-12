@@ -10,6 +10,9 @@
  */
 function firebird_preprocess_page(&$variables): void {
   $variables['#cache']['max-age'] = 0;
-  echo 'test';
-//  phpinfo();
+
+  $exchange_service = \Drupal::service('firebird_module.currency_exchange');
+//  $result = $exchange_service->convertCurrency(50, 'usd', 'eur');
+  $exchange_values = $exchange_service->getCurrenciesFromAPI();
+
 }

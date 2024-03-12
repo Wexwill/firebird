@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function firebird_module_cron() {
+
+  $exchange_service = \Drupal::service('firebird_module.currency_exchange');
+  $exchange_values = $exchange_service->getCurrenciesFromAPI();
+
+  if (!empty($exchange_values) && is_array($exchange_values)) {
+    $values = [
+      'dollar' => 1,
+      'euro' => $exchange_values['EUR'],
+      'ruble' => $exchange_values['RUB'],
+    ];
+
+    \Drupal::database()->insert('currency_exchange')
+      ->fields($values)
+      ->execute();
+  }
+
+}
