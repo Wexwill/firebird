@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="from-wrapper">
+    {{ form.from }}
+    {{ form.amount }}
+  </div>
+  <div class="to-wrapper">
+    {{ form.to }}
+    {{ form.container }}
+  </div>
+</div>
+
+<div class="form-submit">
+  {{ form.convert }}
+</div>
+
+{# Form's hidden inputs related to Form API. #}
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}

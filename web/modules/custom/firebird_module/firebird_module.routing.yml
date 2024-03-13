@@ -1,0 +1,7 @@
+firebird_module.currency_exchange:
+  path: '/admin/currency-exchange'
+  defaults:
+    _form: '\Drupal\firebird_module\Form\CurrencyExchange\CurrencyExchangeForm'
+    _title: 'Simple currency exchange form'
+  requirements:
+    _permission: 'access administration pages'

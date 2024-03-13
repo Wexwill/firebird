@@ -1,0 +1,5 @@
+firebird_module.main:
+  title: 'Firebird'
+  parent: system.admin
+  route_name: firebird_module.currency_exchange
+  weight: 100

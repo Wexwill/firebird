@@ -4,15 +4,3 @@
  * @file
  * Functions to support theming in the custom theme.
  */
-
-/**
- * Implements hook_preprocess_page
- */
-function firebird_preprocess_page(&$variables): void {
-  $variables['#cache']['max-age'] = 0;
-
-  $exchange_service = \Drupal::service('firebird_module.currency_exchange');
-//  $result = $exchange_service->convertCurrency(50, 'usd', 'eur');
-  $exchange_values = $exchange_service->getCurrenciesFromAPI();
-
-}

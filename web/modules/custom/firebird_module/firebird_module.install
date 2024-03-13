@@ -17,17 +17,18 @@ function firebird_module_schema() {
         'type' => 'serial',
         'not null' => TRUE,
       ],
-      'dollar' => [
-        'description' => 'US Dollar.',
+      'date' => [
+        'description' => 'Exchange rate date',
         'type' => 'varchar',
-        'length' => 64,
+        'mysql_type' => 'date',
+        'not null' => FALSE,
       ],
-      'euro' => [
+      'EUR' => [
         'description' => 'Euro.',
         'type' => 'varchar',
         'length' => 64,
       ],
-      'ruble' => [
+      'RUB' => [
         'description' => 'Russian ruble.',
         'type' => 'varchar',
         'length' => 64,

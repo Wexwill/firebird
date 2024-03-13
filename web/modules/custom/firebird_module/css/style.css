@@ -1,0 +1,30 @@
+.currency-exchange {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.currency-exchange .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currency-exchange .wrapper select {
+  width: 100%;
+}
+
+.currency-exchange .form-submit {
+  text-align: center;
+}
+
+.currency-exchange .form-submit input {
+  width: 200px;
+}
+
+.error {
+  color: red;
+}

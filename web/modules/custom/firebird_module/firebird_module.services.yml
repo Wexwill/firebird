@@ -1,4 +1,4 @@
 services:
   firebird_module.currency_exchange:
     class: Drupal\firebird_module\Service\CurrencyExchange
-    arguments: ['@http_client', '@settings']
+    arguments: ['@http_client', '@logger.factory', '@database', '@settings']
